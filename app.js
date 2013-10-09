@@ -21,9 +21,9 @@ app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
-app.use(app.router);
 app.use(require('stylus').middleware(__dirname + '/public'));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(app.router);
 
 // development only
 if (app.get('env') === 'development') {
@@ -44,6 +44,16 @@ app.get('/apply', function(req, res) {
   });
 });
 
+app.get('/donate', function(req, res) {
+  res.render('donate', {
+    title: 'Donate a scholarship',
+    config: config
+  });
+});
+
+app.get('*', function(req, res) {
+  res.redirect('/');
+});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

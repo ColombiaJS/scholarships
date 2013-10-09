@@ -7,17 +7,30 @@ block content
       h1 JSConf.co Scholarships
       p.lead
         | Our goal is to bring as many Colombians as we can in contact with world-class Web Development. Help us help less fortunate community members attend their first ever dev conference.
-      p.action
-        a.btn.btn-lg.btn-success(href=config.donateUrl) Aplica ahora
+
+      form(action="https://www.paypal.com/cgi-bin/webscr", method="post", target="_blank")
+        input(type="hidden", name="cmd", value="_s-xclick")
+        input(type="hidden", name="hosted_button_id", value="PGHV5UK6RMVNU")
+        input.btn.btn-lg.btn-success(type="submit", name="submit", value="Donate with PayPal")
+        img(alt="", border="0", src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif", width="1", height="1")
 
     .row
-      .col-lg-6
-        p.lead You may donate any amount you want, starting from $10. For every $60 we raise we will provide $5 dollar tickets to someone who cannot afford to pay full price to join us, up to our current maximum capacity of 30 scholarships.
+      
+      .col-lg-12
+        
+        p.lead You may donate any amount you want. For every 
+          strong $60 
+          |  we raise we will provide 
+          strong  $5
+          |  tickets to someone who cannot afford to pay full price to join us, up to our current maximum capacity of 
+          strong 30 scholarships.
         p As an organization, we are committed to provide acces to as many local community members as we can to our events. Thanks to the hard work of our team, and the amazing sponsors we have on our side we are able to provide an event affordable for the large majority of professional software developers.
         p We don't just want professionals, we want all of those people out there who are trying to learn how to become developers and entrepreneurs to join us in our Celebration of JavaScript and to do this we need your help.
 
         h3 SCHOLARSHIP ELEGIBILITY
-        p We are looking to provide scholarships to students and low income attendees who reside in Medellin's metropolitan area. We will also make an effort to distribute these in a 70% to 30% female to male ratio.
+        p We are looking to provide scholarships to students and low income attendees who reside in Medellin's metropolitan area. We will also make an effort to distribute these in a 
+          strong 70% to 30% 
+          | female to male ratio.
 
         h3 HOW THE SCHOLARSHIPS WILL BE DISTRIBUTED
         p We have created a repository in github (repoX) with a video tutorial (in spanish) for any person who wants to register their interest in receiving a scholarship. We thought it would be cool if by the end of the application we had also taught someone how to do something new.

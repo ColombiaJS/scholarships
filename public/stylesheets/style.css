@@ -16,10 +16,12 @@ font-size
 .jumbotron small {
   font-size: 0.7em;
 }
-p.action {
+.jumbotron form,
+.jumbotron .action {
   text-align: center;
 }
-p.action .btn {
+.jumbotron form .btn,
+.jumbotron .action .btn {
   font-size: 1.1em;
 }
 .logo {
