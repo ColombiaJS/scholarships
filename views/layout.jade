@@ -5,4 +5,19 @@ html
     link(rel='stylesheet', href='/components/bootstrap/dist/css/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    .container
+      div.page-header
+        ul.nav.nav-pills.pull-right
+          li
+            a(href="http://jsconf.co") Conference
+          li
+            a Donate
+          li
+            a Apply
+
+        h3.text-muted JSConf.co
+
+      block content
+
+      .footer
+        p.text-muted Questions? Drop us a line to hola [@] jsconf.co

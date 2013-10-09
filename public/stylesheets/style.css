@@ -1,0 +1,32 @@
+.container {
+  max-width: 730px;
+}
+.jumbotron h1 {
+  text-align: center;
+font-size
+}
+.jumbotron .logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+p.action {
+  text-align: center;
+}
+p.action .btn {
+  font-size: 1.1em;
+}
+.logo {
+  background: url("../images/logo.png") 0 0 no-repeat;
+  background-size: 100%;
+}
+.footer {
+  padding: 20px 0 20px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 40px;
+}
+#index h3,
+#index h4 {
+  color: #2a86c4;
+}

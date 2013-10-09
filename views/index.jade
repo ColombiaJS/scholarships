@@ -1,5 +1,42 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  section#index
+    .jumbotron
+      .logo
+      h1 JSConf.co Scholarships
+      p.lead
+        | Our goal is to bring as many Colombians as we can in contact with world-class Web Development. Help us help less fortunate community members attend their first ever dev conference.
+      p.action
+        a.btn.btn-lg.btn-success(href=config.donateUrl) Donate Now
+
+    .row
+      .col-lg-6
+        p.lead You may donate any amount you want, starting from $10. For every $60 we raise we will provide $5 dollar tickets to someone who cannot afford to pay full price to join us, up to our current maximum capacity of 30 scholarships.
+        p As an organization, we are committed to provide acces to as many local community members as we can to our events. Thanks to the hard work of our team, and the amazing sponsors we have on our side we are able to provide an event affordable for the large majority of professional software developers.
+        p We don't just want professionals, we want all of those people out there who are trying to learn how to become developers and entrepreneurs to join us in our Celebration of JavaScript and to do this we need your help.
+
+        h3 SCHOLARSHIP ELEGIBILITY
+        p We are looking to provide scholarships to students and low income attendees who reside in Medellin's metropolitan area. We will also make an effort to distribute these in a 70% to 30% female to male ratio.
+
+        h3 HOW THE SCHOLARSHIPS WILL BE DISTRIBUTED
+        p We have created a repository in github (repoX) with a video tutorial (in spanish) for any person who wants to register their interest in receiving a scholarship. We thought it would be cool if by the end of the application we had also taught someone how to do something new.
+
+        h4 To be elegible participants must:
+
+        ul
+          li Create an account in github (if they don't have one)
+          li Fork repoX to their account
+          li Create a branch in their local repo, named after themselves
+          li Duplicate the example folder and rename it with their name
+          li Answer the questions in aplicante.md file
+          li Make something using JavaScript (HTML and CSS are welcome too) that shows us how excited they are about jsconf.co
+          li Commit all their changes
+          li Send a pull request to our respository
+
+        p We may ask some questions on the PR about the applicants to validate elegibility, and we will assign these in the week before the conference, no later than Wednesday October 16th. Winning submissions will be merged to the main repository.
+
+        h3 WHAT YOU GET IN RETURN FOR YOUR DONATION
+        p We want to put 100% of your donation towards our scholarships, you will get lots of karma and we will mention you in our event's homepage as an amazing supporter with a heart.
+
+        p We will be publishing a public transparency report in the weeks after our event.
