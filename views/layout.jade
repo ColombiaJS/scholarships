@@ -9,15 +9,18 @@ html
       div.page-header
         ul.nav.nav-pills.pull-right
           li
+            a(href="/") Home
+          li
             a(href="http://jsconf.co") Conference
           li
             a Donate
-          li
-            a Apply
+          li.active
+            a(href="/apply") (es) Aplica a una beca!
 
         h3.text-muted JSConf.co
 
       block content
 
       .footer
-        p.text-muted Questions? Drop us a line to hola [@] jsconf.co
+        block footer
+          p.text-muted Questions? Drop us a line to hola [@] jsconf.co

@@ -1,0 +1,68 @@
+extends layout
+
+block content
+  section#index
+    .jumbotron
+      .logo
+      h1 Becas JSConf.co
+      p.lead
+        | Queremos exponer a la mayor cantidad de gente posible a JavaScript y desarrollo web profesional de clase mundial, por esto si se te dificulta comprar una entrada esta es tu oportunidad. *
+      p.action
+        a.btn.btn-lg.btn-success(href=config.repoUrl) Gánate una beca
+      p.text-mute
+        small * para participar debes residir en Medellín o cubrir tus gastos de viaje y hospedaje
+
+    .row
+      .col-lg-6
+        p.lead JSConf.co es de todos y para todos, por esto una parte de nuestros esfuerzos como organizadores estan enfocados en realizar un evento accesible para todos los miembros de nuestra comunidad.
+        p Aunque hemos logrado realizar la JSConf más barata en la historia de JSConfs, aún hay miembros de nuestra comunidad a quienes no les es viable asistir. Es por esto que hemos lanzado el programa de becas de JSConf.co, lee a continuación lo que debes hacer para participar.
+
+        h3 BECAS JSCONF.CO
+        p Aquellos participantes que sean elegibles y sean elegidos recibiran la oportunidad de comprar una entrada a JSConf.co por $10,000 pesos Colombianos. Gracias a la generosa donación de compañias y miembros de la comunidad internacional podemos proveer un número limitado de becas. El número de becas disponibles será determinado por la cantidad de donaciones que recibamos para este proposito y serán no transferibles.
+
+        h3 CRITERIO DE ELEGIBILIDAD
+
+        p Las becas se encuentran disponibles para todas aquellas personas interesadas que no sean profesionales y requieran de un impulso para poder asistir. Nuestra intención es construir una comunidad con valores, y por lo tanto confíamos en la honestidad de todos los aplicantes sobre su elegibilidad para recibir becas. De la misma forma, las aplicaciones y la asignación de becas se realizará de forma pública e investigaremos cualquier reclamo hecho por miembros de la comunidad.
+
+        h3 SELECCION
+        p La selección se realizará el en la noche del 15 de octubre y los resultados se encontrarán disponibles de manera simultanea. Es posible que hagamos algunas preguntas a los participantes para asistir nuestra seleccion. lAquellas aplicaciones ganadoras serán mezcladas con nuestro repositorio original y se notificará a los seleccionados.
+
+        p Siempre y cuando los aplicantes sean elegibles según los criterios de elegibilidad, las becas serán distribuidas en un 70% a mujeres y 30% hombres. Eligiremos aplicaciones de todos los niveles de complejidad en proporción a la distribución de niveles.
+
+        h3 INSTRUCCIONES
+
+        h4 Si ya tienes cuenta de GitHub o tienes experiencia con git
+
+        ul
+          li Haz un fork del repositorio que encuentras en repoX
+          li Clóna tu fork a tu máquina
+          li Crea una rama nueva
+          li
+            | Duplica el folder llamado
+            span.text-success  ejemplo
+            |  y renómbralo usando tu nombre separado por guiones (juan-pablo-buritica)
+          li
+            | Abre el archivo llamado
+            span.text-success  aplicante.md 
+            |  y responde las preguntas de tu aplicación
+          li Usa cualquier conocimiento sobre desarrollo web que tengas para mostrarnos cuanto te interesa ir a JSConf.co
+          li Web:
+            ul
+              li Puedes usar HTML, CSS y JavaScript
+              li No hay restricción en cantidad o tipo de librerias que puedes usar
+          li Node.js
+            ul
+              li Puedes usar cualqueir modulo disponible
+              li No olvides incluir el package.json
+          li El resultado final debe haber sido escrito por ti
+          li Agrega todos tus nuevos archivos al repositorio
+          li Empuja tu nueva rama a tu cuenta GitHub
+          li Envía un Pull Request a este repositorio
+
+        h4 Si no tienes cuenta de GitHub o experiencia con git
+        p Puedes observar el siguiente video-tutorlal que muestra paso a paso el proceso de aplicar a una beca JSConf.co
+
+        H3 TUTORIAL
+
+block footer
+  p.text-muted ¿Preguntas? Escríbenos a hola [@] jsconf.co

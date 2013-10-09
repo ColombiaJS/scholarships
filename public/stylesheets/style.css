@@ -10,6 +10,12 @@ font-size
   height: 100px;
   margin: 0 auto;
 }
+.jumbotron .lead {
+  text-align: center;
+}
+.jumbotron small {
+  font-size: 0.7em;
+}
 p.action {
   text-align: center;
 }

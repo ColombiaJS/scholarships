@@ -37,6 +37,14 @@ app.get('/', function(req, res) {
   });
 });
 
+app.get('/apply', function(req, res) {
+  res.render('apply', {
+    title: 'Applica a una beca de JSConf.co',
+    config: config
+  });
+});
+
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
